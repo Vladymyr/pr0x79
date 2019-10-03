@@ -1,0 +1,26 @@
+{
+  "Main_ctor": {
+    "desc": [
+      "()V"
+    ],
+    "names": [
+      "<init>"
+    ]
+  },
+  "Main_init": {
+    "desc": [
+      "()V"
+    ],
+    "names": [
+      "init"
+    ]
+  },
+  "SomeClass_print": {
+    "desc": [
+      "(Ljava/lang/String;)Ljava/util/Map;"
+    ],
+    "names": [
+      "print"
+    ]
+  }
+}

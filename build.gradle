@@ -1,0 +1,50 @@
+plugins {
+    id 'java'
+}
+
+group 'org.hoxell.prox80'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'tcb.pr0x79.program.Main'
+    }
+
+    exclude("mappings")
+    baseName = project.name + '-Program'
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+
+    from sourceSets.test.output
+}
+
+task testJar(type: Jar) {
+    manifest {
+        attributes 'Premain-Class': 'tcb.pr0x79.proxy.Agent'
+    }
+
+    baseName = project.name + '-Agent'
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    
+    from {
+        configurations.testRuntime.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    from sourceSets.test.output
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.ow2.asm', name: 'asm', version: '7.1'
+    compile group: 'org.ow2.asm', name: 'asm-tree', version: '7.1'
+    compile group: 'org.ow2.asm', name: 'asm-util', version: '7.1'
+
+    testCompile 'com.google.code.gson:gson:2.8.5'
+}

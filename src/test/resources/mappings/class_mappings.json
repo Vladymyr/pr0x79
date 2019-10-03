@@ -1,0 +1,12 @@
+{
+  "Main": {
+    "names": [
+      "tcb/pr0x79/program/Main"
+    ]
+  },
+  "SomeClass": {
+    "names": [
+      "tcb/pr0x79/program/SomeClassBody$SomeClass"
+    ]
+  }
+}

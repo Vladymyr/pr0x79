@@ -1,0 +1,26 @@
+{
+  "Main_someClass": {
+    "desc": [
+      "Ltcb/pr0x79/program/SomeClassBody$SomeClass;"
+    ],
+    "names": [
+      "someClass"
+    ]
+  },
+  "SomeClass_value": {
+    "desc": [
+      "Ljava/lang/String;"
+    ],
+    "names": [
+      "value"
+    ]
+  },
+  "generatedFieldName": {
+    "desc": [
+      "unused"
+    ],
+    "names": [
+      "someGeneratedFieldName"
+    ]
+  }
+}

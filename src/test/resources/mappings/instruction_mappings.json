@@ -1,0 +1,73 @@
+{
+  "first_return": {
+    "symbol": "instruction",
+    "identification": "first_return"
+  },
+  "first_return-1": {
+    "symbol": "instruction",
+    "identification": "first_return",
+    "offset": -1
+  },
+  "first_return-2": {
+    "symbol": "instruction",
+    "identification": "first_return",
+    "offset": -2
+  },
+  "start": {
+    "symbol": "instruction",
+    "identification": "index",
+    "index": 0
+  },
+  "before_init_print": {
+    "symbol": "instruction",
+    "identification": "method_call",
+    "desc": [
+      "(Ljava/lang/String;)Ljava/util/Map;"
+    ],
+    "names": [
+      "print"
+    ],
+    "owners": [
+      "tcb/pr0x79/program/SomeClassBody$SomeClass"
+    ]
+  },
+  "after_init_print": {
+    "symbol": "instruction",
+    "identification": "method_call",
+    "desc": [
+      "(Ljava/lang/String;)Ljava/util/Map;"
+    ],
+    "names": [
+      "print"
+    ],
+    "owners": [
+      "tcb/pr0x79/program/SomeClassBody$SomeClass"
+    ],
+    "before": false
+  },
+  "this": {
+    "symbol": "local_variable",
+    "identification": "index",
+    "index": 0
+  },
+  "local_var_1": {
+    "symbol": "local_variable",
+    "identification": "index",
+    "index": 1
+  },
+  "local_var_2": {
+    "symbol": "local_variable",
+    "identification": "index",
+    "index": 2
+  },
+  "local_var_3": {
+    "symbol": "local_variable",
+    "identification": "index",
+    "index": 3
+  },
+  "local_var_3": {
+    "symbol": "local_variable",
+    "identification": "index",
+    "index": 3
+  }
+}
